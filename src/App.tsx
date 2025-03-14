@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider } from "./theme/ThemeProvider";
+import CssBaseline from "@mui/material/CssBaseline";
+import Container from "@mui/material/Container";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Notes from "./components/Notes/Notes";
+import { Box } from "@mui/material";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ThemeProvider>
+      <CssBaseline />
+      <Router>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "100vh",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Navbar />
+          <Container sx={{ flexGrow: 1, mt: 4 }}>
+            {" "}
+            <Routes>
+              <Route path="/" element={<Notes />} />
+            </Routes>
+          </Container>
+          <Footer />
+        </Box>
+      </Router>
+    </ThemeProvider>
   );
 }
-
-export default App;
