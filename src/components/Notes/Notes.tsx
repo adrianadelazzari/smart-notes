@@ -202,7 +202,11 @@ export default function Notes() {
                 ) : (
                   <>
                     <Typography variant="h6">{note.title}</Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ marginTop: "15px" }}
+                    >
                       {note.content}
                     </Typography>
                     <CardActions
