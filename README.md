@@ -11,10 +11,6 @@ Easily create, edit, and delete notes with a clean and minimalistic interface.
 ✅ Intuitive and user-friendly UI  
 ✅ Dark Mode support
 
-## 🎥 Demo
-
-🔗 **GitHub Repo**: [GitHub](https://github.com/yourusername/smart-notes)
-
 ## 📸 Screenshots
 
 ![alt text](public/images/image.png)
