@@ -31,7 +31,7 @@ Follow these steps to run **Smart Notes** locally:
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/smart-notes.git
+git clone https://github.com/adrianadelazzari/smart-notes.git
 cd smart-notes
 ```
 
