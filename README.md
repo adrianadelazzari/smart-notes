@@ -49,6 +49,6 @@ npm start
 
 Now, open http://localhost:3000/ in your browser.
 
-## 📜 License
+### 📜 License
 
-This project is open-source under the MIT License.
+This project is open-source under the [MIT License](https://mit-license.org/).

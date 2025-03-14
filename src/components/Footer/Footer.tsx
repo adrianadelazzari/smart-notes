@@ -12,7 +12,7 @@ const Footer = () => (
     }}
   >
     <Typography variant="body2">
-      &copy; {new Date().getFullYear()} Adriana de Lazzari. All Rights Reserved.
+      &copy; {new Date().getFullYear()} Adriana de Lazzari.
     </Typography>
   </Box>
 );
